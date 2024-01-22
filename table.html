@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  writing-mode: horizontal-lr;
+  height: 100%;
+  width: 700px; /* adjust as needed */
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table tr:first-child {
+  font-weight: bold;
+  background-color: orange;
+}
+
+table th[rowspan][colspan] {
+  font-weight: normal;
+}
+</style>
+</head>
+<body>
+
+<table>
+<tr>
+<th>Time</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+<th>Sunday</th>
+</tr>
+<tr>
+<td>06:00</td>
+<td>National News</td>
+<td>National News</td>
+<td>National News</td>
+<td>National News</td>
+<td>National News</td>
+<td>National News</td>
+<td>National News</td>
+</tr>
+<tr>
+<td>06:30</td>
+<td>World News</td>
+<td>World News</td>
+<td>World News</td>
+<td>World News</td>
+<td>World News</td>
+<td>World News</td>
+<td>World News</td>
+</tr>
+<tr>
+<td>07:00</td>
+<th rowspan="2" style="font-weight: normal;">Opera Fest</th>
+<th rowspan="2" style="font-weight: normal;">Radio U</th>
+<th rowspan="2" style="font-weight: normal;">Science Week</th>
+<th rowspan="2" style="font-weight: normal;">The Living World</th>
+<td>World Play</td>
+<td>Agri-Week</td>
+<th rowspan="2"	style="font-weight: normal;">Folk Fest</th>
+</tr>
+
+<tr>
+<td>07:30</td>
+<td>Brain Stew</td>
+<td>Bismarck Forum</td>
+</tr>
+<tr>
+<td>8:00</td>
+<th rowspan="4" colspan="4">The Classical Music Connection</th>
+<td>Old Time Radio</td>
+<th rowspan="4"	style="font-weight: normal;">Saturday Nite Jazz</th>
+<th rowspan="4"	style="font-weight: normal;">The Indie Connection</th>
+</tr>
+<tr>
+<td>8:30</td>
+<td>The Inner Mind</td>
+</tr>
+<tr>
+<td>9:00</td>
+<th rowspan="2"	style="font-weight: normal;">Open Mike Nite</th>
+</tr>
+<tr>
+<td>9:30</td>
+</tr>
+<tr>
+<td>10:00</td>
+<td>World News Feed</td>
+<td>World News Feed</td>
+<td>World News Feed</td>
+<td>World News Feed</td>
+<td>World News Feed</td>
+<td>World News Feed</td>
+<td>World News Feed</td>
+</tr>
+</table>
+
+</body>
+</html>

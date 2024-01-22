@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: double;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+th:first-child, td:first-child {
+  width: 5%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 5%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+  width: 5%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+  width: 1%;
+}
+
+th:last-child, td:last-child {
+  width: 5%;
+}
+
+tr:last-child th:first-child {
+  text-align: right;
+}
+
+tr:last-child th:last-child {
+  text-align: left;
+}
+.label-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+  }
+</style>
+<body>
+<h2 style="color:blue;">Order Form</h2>
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="fname">Address:</label>
+<input type="text" id="fname" name="fname" style="height: 70px; width: 200px;"><br><br>
+  
+  <label for="postcode">Postcode:</label>
+  <input type="postcode" id="email" name="postcode" required><br><br>
+
+</form>
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Part Number</th> 
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td contenteditable="true">Tires</td>
+    <td contenteditable="true">LB190</td>
+    <td contenteditable="true">4</td>
+    <td contenteditable="true">R5</td>
+    <td>R</td>
+  </tr>
+  <tr>
+    <td contenteditable="true">Gear Box</td>
+    <td contenteditable="true">LV330</td>
+    <td contenteditable="true">7</td>
+    <td contenteditable="true">R10</td>
+    <td>R</td>
+  </tr>
+  <tr>
+    <td contenteditable="true">Car seats</td>
+    <td contenteditable="true">BE300</td>
+    <td contenteditable="true">7</td>
+    <td contenteditable="true">R15</td>
+    <td>R</td>
+  </tr>
+  <tr>
+    <td contenteditable="true">WindScreen</td>
+    <td contenteditable="true">LB400</td>
+    <td contenteditable="true">5</td>
+    <td contenteditable="true">R20</td>
+    <td>R</td>
+  </tr>
+  <tr>
+    <td contenteditable="true">Mags</td>
+    <td contenteditable="true">LB500</td>
+    <td contenteditable="true">54</td>
+    <td contenteditable="true">R30</td>
+    <td>R</td>
+  </tr>
+  <tr>
+    <th colspan="4">Total:</th>
+    <th>R</th>
+  </tr>
+</table>
+<h2 style="font-size:100%;">Credit card details:</h2>
+<label for="cardtype">Card Type:</label><br>
+<input type="radio" id="mastercard" name="cardtype" value="mastercard">
+<label for="mastercard">Mastercard</label><br>
+<input type="radio" id="visa" name="cardtype" value="visa">
+<label for="visa">Visa</label><br>
+<input type="radio" id="amex" name="cardtype" value="amex">
+<label for="amex">American Express</label><br>
+<input type="radio" id="csharp" name="cardtype" value="csharp">
+<label for="csharp">Diners Club</label><br>
+
+  
+  
+  
+  
+
+  <div style="text-align: center;">
+    <label for="cardnumber">Card Number:</label>
+    <input type="text" id="cardnumber" name="cardnumber" required><br><br>
+    <label for="expdate">Expiry Date:</label>
+    <input type="text" id="expdate" name="expdate" placeholder="mm / yy" required><br>
+    <br>
+  </div>
+
+  
+  <div class="label-wrapper">
+    <label for="address">Delivery Address:</label>
+  </div>
+  <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+  
+  <input type="submit" value="Send order">
+  <input type="submit" formtarget="_blank" value="Clear form">
+</form>
+
+</form>
+
